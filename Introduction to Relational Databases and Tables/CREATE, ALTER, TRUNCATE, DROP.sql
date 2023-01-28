@@ -63,7 +63,6 @@ SELECT * FROM PET;
 -- Add a new QUANTITY column to the PETSALE table and show the altered table
 ALTER TABLE PETSALE
 ADD COLUMN QUANTITY INTEGER;
-
 SELECT * FROM PETSALE;
 
 -- Now update the newly added QUANTITY column of the PETSALE table with some values and show all the records of the table
@@ -72,33 +71,28 @@ UPDATE PETSALE SET QUANTITY = 3 WHERE ID = 2;
 UPDATE PETSALE SET QUANTITY = 2 WHERE ID = 3;
 UPDATE PETSALE SET QUANTITY = 6 WHERE ID = 4;
 UPDATE PETSALE SET QUANTITY = 24 WHERE ID = 5;
-
 SELECT * FROM PETSALE;
 
 -- Delete the PROFIT column from the PETSALE table and show the altered table
 ALTER TABLE PETSALE
 DROP COLUMN PROFIT;
-
 SELECT * FROM PETSALE;
 
 -- Change the data type to VARCHAR(20) type of the column PET of the table PETSALE and show the altered table
 ALTER TABLE PETSALE
 ALTER COLUMN PET SET DATA TYPE VARCHAR(20);
-
 SELECT * FROM PETSALE;
 
 -- Rename the column PET to ANIMAL of the PETSALE table and show the altered table
 ALTER TABLE PETSALE
 RENAME COLUMN PET TO ANIMAL;
-
 SELECT * FROM PETSALE;
 
 -- Remove all rows from the PET table and show the empty table
-TRUNCATE TABLE PET IMMEDIATE;
-
+TRUNCATE TABLE PET 
+IMMEDIATE;
 SELECT * FROM PET;
 
 -- Delete the PET table and verify if the table still exists or not (SELECT statement won't work if a table doesn't exist)
 DROP TABLE PET;
-
 SELECT * FROM PET;
