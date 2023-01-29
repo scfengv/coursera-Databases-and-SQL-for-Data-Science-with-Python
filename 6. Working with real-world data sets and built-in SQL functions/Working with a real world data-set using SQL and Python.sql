@@ -11,7 +11,7 @@
 SELECT TABSCHEMA, TABNAME, CREATE_TIME \
 FROM SYSCAT.TABLES \
 WHERE TABSCHEMA='DB2-USERNAME' ;
--- SYSCAT.TABLE which means "system catalog table", contains the table metatable
+-- SYSCAT.TABLE which means "system catalog table", contains the table metadata
 
 
 -- Retrieve the the list of columns in SCHOOLS table and their column type (datatype) and length
