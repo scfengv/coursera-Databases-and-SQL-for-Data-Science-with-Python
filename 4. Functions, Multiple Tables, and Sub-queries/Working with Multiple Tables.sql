@@ -8,7 +8,7 @@ IN (SELECT JOB_IDENT FROM JOBS);
 
 -- Retrieve only the list of employees whose JOB_TITLE is Jr. Designe
 SELECT *
-FROM EMPLOYEES
+FROM EMPLOYEES 
 WHERE JOB_ID 
 IN (SELECT JOB_IDENT FROM JOBS WHERE JOB_TITLE = 'Jr. Designer');
 
